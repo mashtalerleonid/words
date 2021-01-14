@@ -5526,7 +5526,7 @@ window.addEventListener('load', function(){
             setTimeout(function() {potochni.style.top = '-100px';}, 1000);            
         }
         
-
+ 
 
         for (var j=1; j< 15;j++) {b[j]=0}
         k=1;sum=0; mn=1;
