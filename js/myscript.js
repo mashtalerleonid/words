@@ -4743,6 +4743,11 @@ while ((x3 == w3)||(x3 == w2)) {x3 = getRandom(1,25)}
 xx2 = getRandom(1,25)
 while ((xx2 == w3)||(xx2 == w2)||(xx2 == x3)) {xx2 = getRandom(1,25)}
 
+for (let j=1;j<26;j++){
+       xx=getRandom(1,letters.length-1)
+        pole[1][j] = letters[xx]
+   
+    }
 
 function drawstart() {
     var canvas = document.getElementById('tutorial');
@@ -5083,7 +5088,8 @@ window.addEventListener('load', function(){
                     y2p=y2;	                 
                 } 
                 else {
-                    if (((e.clientX-x0)>x1)&&((e.clientX-x0)<x2)&&((e.clientY-y0)>y1)&&((e.clientY-y0)<y2)&&(nbs[knbs-1]==i)){
+                    if (((e.clientX - x0 - pohybka) > x1) && ((e.clientX - x0 + pohybka) < x2) &&
+                        ((e.clientY - y0-pohybka) > y1) && ((e.clientY - y0+pohybka) < y2) && (nbs[knbs - 1] == i)) {
  
                         ctx.fillStyle = 'white';
                         ctx.fillRect(x1p,y1p, kv, kv);
@@ -5249,7 +5255,8 @@ window.addEventListener('load', function(){
                     y2p=y2;	                 
                 } 
                 else {
-                    if (((tm.clientX-x0)>x1)&&((tm.clientX-x0)<x2)&&((tm.clientY-y0)>y1)&&((tm.clientY-y0)<y2)&&(nbs[knbs-1]==i)){
+                    if (((tm.clientX - x0 - pohybka) > x1) && ((tm.clientX - x0 + pohybka) < x2)
+                        && ((tm.clientY - y0-pohybka) > y1) && ((tm.clientY - y0+pohybka) < y2) && (nbs[knbs - 1] == i)) {
  
                         ctx.fillStyle = 'white';
                         ctx.fillRect(x1p,y1p, kv, kv);
