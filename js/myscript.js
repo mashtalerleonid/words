@@ -5001,7 +5001,7 @@ window.addEventListener('load', function(){
             }	
         }          
         
-        ts.preventDefault() // prevent default click behavior
+        // ts.preventDefault() // prevent default click behavior
         	
     }, false)
 
@@ -5335,7 +5335,7 @@ window.addEventListener('load', function(){
                     }			
                 }			
             }  				
-            tm.preventDefault()
+            // tm.preventDefault()
         
     }, false)
 
@@ -5743,7 +5743,7 @@ window.addEventListener('load', function(){
         for (var j=1; j< 15;j++) {b[j]=0}
         k=1;sum=0; mn=1;
         ismousedown = false
-        te.preventDefault() // prevent default click behavior
+        // te.preventDefault() // prevent default click behavior
     
     }, false)
 
